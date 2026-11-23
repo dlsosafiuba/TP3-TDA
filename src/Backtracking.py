@@ -30,4 +30,6 @@ def _busqueda_solucion(tablero, col, filas_cubiertas):
     return verdes + sol_sin_v, cubiertas_sin_v
 
 def bt_juego_piedras(tablero):
+    if not tablero or not tablero[0]:
+        return [], 0
     return _busqueda_solucion(tablero, 0, [0] * len(tablero))
