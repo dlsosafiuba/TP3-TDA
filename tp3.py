@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 from src.Backtracking import bt_juego_piedras
 from src.Lineal import pl_juego_piedras
